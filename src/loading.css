@@ -1,0 +1,207 @@
+:root {
+  --main-color: rgb(0, 40, 125);
+}
+
+.loader-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.loader span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loader span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: var(--main-color);
+  box-shadow: 0 0 4px var(--main-color);
+  animation: animateLoader 1s linear infinite;
+}
+
+.loader span:nth-child(1) {
+  transform: rotate(18deg);
+}
+
+.loader span:nth-child(1)::before {
+  animation-delay: 0.05s;
+}
+
+.loader span:nth-child(2) {
+  transform: rotate(36deg);
+}
+
+.loader span:nth-child(2)::before {
+  animation-delay: 0.1s;
+}
+
+.loader span:nth-child(3) {
+  transform: rotate(54deg);
+}
+
+.loader span:nth-child(3)::before {
+  animation-delay: 0.15s;
+}
+
+.loader span:nth-child(4) {
+  transform: rotate(72deg);
+}
+
+.loader span:nth-child(4)::before {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(5) {
+  transform: rotate(90deg);
+}
+
+.loader span:nth-child(5)::before {
+  animation-delay: 0.25s;
+}
+
+.loader span:nth-child(6) {
+  transform: rotate(108deg);
+}
+
+.loader span:nth-child(6)::before {
+  animation-delay: 0.3s;
+}
+
+.loader span:nth-child(7) {
+  transform: rotate(126deg);
+}
+
+.loader span:nth-child(7)::before {
+  animation-delay: 0.35s;
+}
+
+.loader span:nth-child(8) {
+  transform: rotate(144deg);
+}
+
+.loader span:nth-child(8)::before {
+  animation-delay: 0.4s;
+}
+
+.loader span:nth-child(9) {
+  transform: rotate(162deg);
+}
+
+.loader span:nth-child(9)::before {
+  animation-delay: 0.45s;
+}
+
+.loader span:nth-child(10) {
+  transform: rotate(180deg);
+}
+
+.loader span:nth-child(10)::before {
+  animation-delay: 0.5s;
+}
+
+.loader span:nth-child(11) {
+  transform: rotate(198deg);
+}
+
+.loader span:nth-child(11)::before {
+  animation-delay: 0.55s;
+}
+
+.loader span:nth-child(12) {
+  transform: rotate(216deg);
+}
+
+.loader span:nth-child(12)::before {
+  animation-delay: 0.6s;
+}
+
+.loader span:nth-child(13) {
+  transform: rotate(234deg);
+}
+
+.loader span:nth-child(13)::before {
+  animation-delay: 0.65s;
+}
+
+.loader span:nth-child(14) {
+  transform: rotate(252deg);
+}
+
+.loader span:nth-child(14)::before {
+  animation-delay: 0.7s;
+}
+
+.loader span:nth-child(15) {
+  transform: rotate(270deg);
+}
+
+.loader span:nth-child(15)::before {
+  animation-delay: 0.75s;
+}
+
+.loader span:nth-child(16) {
+  transform: rotate(288deg);
+}
+
+.loader span:nth-child(16)::before {
+  animation-delay: 0.8s;
+}
+
+.loader span:nth-child(17) {
+  transform: rotate(306deg);
+}
+
+.loader span:nth-child(17)::before {
+  animation-delay: 0.85s;
+}
+
+.loader span:nth-child(18) {
+  transform: rotate(324deg);
+}
+
+.loader span:nth-child(18)::before {
+  animation-delay: 0.9s;
+}
+
+.loader span:nth-child(19) {
+  transform: rotate(342deg);
+}
+
+.loader span:nth-child(19)::before {
+  animation-delay: 0.95s;
+}
+
+.loader span:nth-child(20) {
+  transform: rotate(360deg);
+}
+
+.loader span:nth-child(20)::before {
+  animation-delay: 1s;
+}
+
+@keyframes animateLoader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=loading.css.map */

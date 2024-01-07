@@ -1,0 +1,60 @@
+:root {
+    --main-color: rgb(0, 40, 125);
+    // --main-color: purple;
+}
+
+.loader-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    // background-color: #333;
+}
+.loader {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.loader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.loader span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: scale(0);
+    background-color: var(--main-color);
+    box-shadow: 0 0 4px var(--main-color);
+    // box-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color),
+    //     0 0 40px var(--main-color), 0 0 60px var(--main-color),
+    //     0 0 80px var(--main-color), 0 0 100px var(--main-color);
+    animation: animateLoader 1s linear infinite;
+}
+@for $i from 1 through 20 {
+    .loader span:nth-child(#{$i}) {
+        transform: rotate(18deg * $i);
+    }
+    .loader span:nth-child(#{$i})::before {
+        animation-delay: calc(0.05s * $i);
+    }
+}
+
+@keyframes animateLoader {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
